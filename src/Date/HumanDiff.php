@@ -58,9 +58,10 @@ class Date_HumanDiff
      */
     protected $translator;
 
-    public function getHumanTime($timestamp, $short_formats = false, $reference = null)
+    public static function getHumanTime($timestamp, $short_formats = false, $reference = null)
     {
-        return $this->get($timestamp, $reference, !$short_formats);
+        $hd = new self();
+        return $hd->get($timestamp, $reference, !$short_formats);
     }
 
     /**
