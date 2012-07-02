@@ -58,6 +58,11 @@ class Date_HumanDiff
      */
     protected $translator;
 
+    public function getHumanTime($timestamp, $short_formats = false, $reference = null)
+    {
+        return $this->get($timestamp, $reference, !$short_formats);
+    }
+
     /**
      * Generate a human readable time difference.
      *
