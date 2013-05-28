@@ -1,0 +1,12 @@
+{
+  "name": "gotryiton/Date_HumanDiff",
+  "type": "library",
+  "description": "Date library",
+  "homepage": "http://github.com/gotryiton/Date_HumanDiff",
+  "license": "lgpl",
+  "autoload" : {
+    "psr-0": {
+      "Date" : "src/"
+    }
+  }
+}
